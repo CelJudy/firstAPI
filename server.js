@@ -13,9 +13,9 @@ app.get("/api", (req, res) => {
     res.json({body:{clave:'prueba'}})
 });
 
-/* app.get("/iot", (req, res) => {
-    
-}); */
+app.get("/mongo", (req, res) => {
+    res.send("aqui va lo de mongo");
+}); 
 
 app.listen(3000, (err) => {
     console.log("Listening on port 3000");
