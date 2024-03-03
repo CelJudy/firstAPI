@@ -13,7 +13,7 @@ app.get("/api", (req, res) => {
     res.json({body:{clave:'prueba'}})
 });
 
-app.get("/mongo", (req, res) => {
+app.get("/", (req, res) => {
     res.send("aqui va lo de mongo");
 }); 
 
