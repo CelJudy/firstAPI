@@ -24,7 +24,7 @@ app.get("/mongo", (req, res) => {
 app.post('/saveData', functions.saveData) 
 
 app.post("/apiP", (req, res) => {
-    //console.log(req);
+    console.log(req.body);
     res.json({clave:'hola mundo'})
 });
 
