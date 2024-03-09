@@ -23,6 +23,10 @@ app.get("/mongo", (req, res) => {
 
 app.post('/saveData', functions.saveData) 
 
+app.post("/apiP", (req, res) => {
+    res.json({body:{clave:'hola mundo'}})
+});
+
 app.listen(3000, (err) => {
     console.log("Listening on port 3000");
 });
