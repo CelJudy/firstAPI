@@ -18,6 +18,9 @@ app.get("/api", (req, res) => {
 });
 
 app.get("/mongo", (req, res) => {
+    var f = new Date();
+    
+    console.log();
     res.send("aqui va lo de mongo");
 }); 
 
