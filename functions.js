@@ -20,6 +20,7 @@ async function saveData(req, res) {
         temperatura:Number,
         humedad:Number,
         distancia:Number,
+        fecha:String,
     },{ versionKey: false }); //para que no inserte el campo __v
 
     const lecturas = mongoose.model("lecturas", lecturasSchema);
