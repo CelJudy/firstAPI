@@ -28,7 +28,7 @@ async function saveData(req, res) {
 
     console.log(data);  
     //res.send("fin");
-    res.json({response:'OK'})
+    res.json({response:'OK', data:data})
     //res.end(JSON.stringify(response));  
  }
 
