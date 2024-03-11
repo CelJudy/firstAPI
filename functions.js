@@ -19,7 +19,8 @@ async function saveData(req, res) {
     await lecturas.create(data);
 
     console.log(data);  
-    res.send("fin");
+    //res.send("fin");
+    res.json({response:'OK'})
     //res.end(JSON.stringify(response));  
  }
 
